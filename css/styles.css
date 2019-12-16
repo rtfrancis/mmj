@@ -118,13 +118,15 @@ img {
     .app__phone img {
       display: block;
       margin: 0 auto; }
-  .app__container .app__text--heading {
-    font-size: 3rem;
-    font-weight: 600; }
-  .app__container .app__text--subtext {
-    font-size: 1.8rem;
-    font-weight: 300;
-    margin: 2rem 0; }
+  .app__container {
+    padding: 1rem; }
+    .app__container .app__text--heading {
+      font-size: 3rem;
+      font-weight: 600; }
+    .app__container .app__text--subtext {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin: 2rem 0; }
 
 .pro {
   background: black;
