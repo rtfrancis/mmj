@@ -173,6 +173,8 @@ img {
     width: auto;
     display: block;
     margin: 0 auto; }
+  .pro__photo .pro__contain--double {
+    display: none; }
 
 .actionCall {
   background: #E6E6E6;
@@ -244,3 +246,435 @@ img {
       font-weight: 400;
       margin-top: 3rem;
       text-align: left; }
+
+@media only screen and (min-width: 650px) {
+  .nav {
+    background: #000;
+    padding: 3rem 3rem; }
+    .nav__bar {
+      display: flex;
+      justify-content: space-between; }
+      .nav__bar--logo {
+        width: auto;
+        height: 7rem; }
+      .nav__bar--links {
+        display: flex;
+        align-items: center; }
+        .nav__bar--links div {
+          display: inline-block; }
+        .nav__bar--links a {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 2.2rem; }
+        .nav__bar--links .pro-button {
+          margin-top: 9px;
+          margin-left: 4rem; }
+          .nav__bar--links .pro-button img {
+            height: 4rem;
+            width: auto;
+            top: 0;
+            right: 20px; }
+          .nav__bar--links .pro-button .static-button {
+            display: none; }
+  .header {
+    background: #E6E6E6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4rem 1rem 1rem 1rem; }
+    .header__text {
+      margin-top: 1.2rem;
+      margin-left: 7rem;
+      margin-right: -3rem;
+      text-align: left;
+      min-width: 35rem; }
+      .header__text--container .header-intro {
+        font-size: 2.8rem;
+        font-weight: 600; }
+      .header__text--container .header-subtext {
+        font-size: 1.8rem;
+        margin: 3rem 0; }
+      .header__text--container div {
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 2rem; }
+        .header__text--container div img {
+          height: 30px;
+          width: auto;
+          margin: 0 .5rem; }
+      .header__text--container .header-getApp {
+        font-size: 1.5rem;
+        font-weight: 500; }
+    .header__image img {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      height: auto;
+      width: 400rem; }
+  .features {
+    color: #ffffff;
+    background: #000;
+    padding: 3rem 1rem; }
+    .features .wrapper {
+      display: flex;
+      flex-direction: row; }
+      .features .wrapper .features__grid {
+        flex: 2.5;
+        padding: 3rem 0rem; }
+        .features .wrapper .features__grid--wrapper {
+          margin: 0 auto;
+          max-width: 42.5rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          overflow: scroll; }
+          .features .wrapper .features__grid--wrapper img {
+            max-height: 13rem;
+            width: auto;
+            margin: .5rem; }
+      .features .wrapper .features__container {
+        flex: 1.5;
+        margin-left: 2rem; }
+        .features .wrapper .features__container--text {
+          margin-top: 1rem;
+          width: 90%;
+          padding: 3rem 2rem; }
+          .features .wrapper .features__container--text--heading {
+            font-size: 2.8rem;
+            font-weight: 600; }
+          .features .wrapper .features__container--text--subtext {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin: 2rem 0; }
+  .app {
+    background: #E6E6E6;
+    padding: 3rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: row; }
+    .app__phone {
+      flex: 2.5;
+      width: 100%;
+      padding-top: 2.5rem; }
+      .app__phone img {
+        display: block;
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto; }
+    .app__container {
+      flex: 1.5;
+      padding: 1rem; }
+      .app__container .app__text {
+        padding: 3rem 0; }
+        .app__container .app__text--heading {
+          font-size: 3rem;
+          font-weight: 600; }
+        .app__container .app__text--subtext {
+          font-size: 1.8rem;
+          font-weight: 300;
+          margin: 2rem 0; }
+  .pro {
+    background: black;
+    color: #ffffff;
+    padding: 3rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 50rem; }
+    .pro__text {
+      flex: 1.5;
+      display: inline-block;
+      margin: 0 auto;
+      padding: 7rem 2.5rem;
+      margin-left: 3rem; }
+      .pro__text--headline {
+        font-size: 2.5rem;
+        font-weight: 600; }
+      .pro__text--subtext {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin: 2rem 0; }
+      .pro__text--list {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+        list-style: none; }
+      .pro__text ul li::before {
+        content: "\2022";
+        color: #ff2d77;
+        display: inline-block;
+        width: 3rem;
+        margin-left: -2rem; }
+      .pro__text--button {
+        height: 3rem;
+        width: 12rem;
+        margin-left: 0;
+        background: #ff2d77;
+        font-size: 1.6rem;
+        text-align: center;
+        border-radius: 5px;
+        padding: .5rem 0;
+        margin-top: 3rem; }
+        .pro__text--button a {
+          text-decoration: none;
+          color: white; }
+    .pro__photo {
+      flex: 2;
+      width: 50%; }
+      .pro__photo .pro__contain {
+        position: relative; }
+        .pro__photo .pro__contain--landscape {
+          display: none; }
+        .pro__photo .pro__contain--portrait {
+          display: none; }
+        .pro__photo .pro__contain--double {
+          display: inline-block;
+          max-width: 60rem;
+          padding: 2.5rem 0;
+          margin-left: -1.5rem; } }
+
+@media screen and (min-width: 920px) {
+  .nav {
+    padding: 1.5rem 4rem; }
+  .header {
+    background: #E6E6E6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4rem 1rem 1rem 1rem; }
+    .header__text {
+      margin-left: 7rem;
+      margin-right: -3rem;
+      text-align: left;
+      min-width: 35rem;
+      padding: 9rem .5rem; }
+      .header__text--container {
+        max-width: 30rem; }
+        .header__text--container .header-intro {
+          font-size: 3.8rem;
+          font-weight: 700; }
+        .header__text--container .header-subtext {
+          font-size: 2.4rem;
+          margin: 3rem 0;
+          padding-left: 0; }
+        .header__text--container div {
+          display: inline-block;
+          margin: 0 auto;
+          padding-left: 0;
+          margin-bottom: 2rem; }
+          .header__text--container div img {
+            height: 30px;
+            width: auto;
+            margin-right: .5rem; }
+        .header__text--container .header-getApp {
+          font-size: 2.2rem;
+          font-weight: 500; }
+    .header__image img {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      height: auto;
+      max-width: 45rem; }
+  .features {
+    padding: 4rem 3rem; }
+    .features .wrapper {
+      display: flex;
+      flex-direction: row; }
+      .features .wrapper .features__grid {
+        flex: 2.3;
+        padding: 3rem 0rem; }
+        .features .wrapper .features__grid--wrapper {
+          margin: 0 auto;
+          max-width: 60rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          overflow: scroll; }
+          .features .wrapper .features__grid--wrapper img {
+            height: 15rem;
+            max-height: 30rem;
+            width: auto;
+            margin: .5rem; }
+      .features .wrapper .features__container {
+        flex: 1.7;
+        margin-left: 2rem; }
+        .features .wrapper .features__container--text {
+          margin-top: 1rem;
+          max-width: 40rem;
+          padding: 5rem 2rem;
+          margin: 0 auto; }
+          .features .wrapper .features__container--text--heading {
+            font-size: 3.6rem;
+            font-weight: 600; }
+          .features .wrapper .features__container--text--subtext {
+            font-size: 2.2rem;
+            font-weight: 300;
+            margin: 2rem 0; }
+  .app {
+    background: #E6E6E6;
+    height: 42rem;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: row; }
+    .app__phone {
+      flex: 2.5;
+      width: 100%;
+      padding-top: 3rem; }
+      .app__phone img {
+        display: block;
+        height: auto;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto; }
+    .app__container {
+      flex: 1.5;
+      padding: 1rem; }
+      .app__container .app__text {
+        max-width: 40rem;
+        padding: 5.5rem 0; }
+        .app__container .app__text--heading {
+          font-size: 3.6rem;
+          font-weight: 600; }
+        .app__container .app__text--subtext {
+          font-size: 2.2rem;
+          font-weight: 300;
+          margin: 2rem 0; }
+  .pro {
+    padding: 3rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 60rem; }
+    .pro__text {
+      flex: 1.5;
+      display: inline-block;
+      margin: 0 auto;
+      padding: 10rem 2.5rem;
+      margin-left: 3rem; }
+      .pro__text--wrapper {
+        max-width: 36rem;
+        margin: 0 auto; }
+      .pro__text--headline {
+        font-size: 3.2rem;
+        font-weight: 600; }
+      .pro__text--subtext {
+        font-size: 2.2rem;
+        font-weight: 300;
+        margin: 2rem 0; }
+      .pro__text--list {
+        font-size: 2rem;
+        margin-left: 2rem;
+        list-style: none; }
+      .pro__text ul li::before {
+        content: "\2022";
+        color: #ff2d77;
+        display: inline-block;
+        width: 3rem;
+        margin-left: -2rem; }
+      .pro__text--button {
+        height: 4rem;
+        width: 13rem;
+        background: #ff2d77;
+        font-size: 1.6rem;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1rem 0;
+        margin-top: 4rem;
+        margin-left: 0; }
+        .pro__text--button a {
+          text-decoration: none;
+          color: white; }
+    .pro__photo .pro__contain--double {
+      margin-top: -2rem; }
+  .actionCall {
+    height: 34rem; }
+    .actionCall__headline {
+      font-size: 3.2rem;
+      margin-bottom: 4rem; }
+    .actionCall div {
+      margin-bottom: 4rem; }
+      .actionCall div img {
+        height: 40px;
+        width: auto;
+        margin: 0 .5rem; }
+    .actionCall__subtext {
+      font-size: 2.2rem;
+      font-weight: 500;
+      text-align: center; } }
+
+@media screen and (min-width: 1250px) {
+  .pro {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly; }
+    .pro__text {
+      flex: 1;
+      padding-top: 6rem;
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      width: 43.3rem; }
+      .pro__text--headline {
+        font-size: 3.6rem;
+        line-height: 0.89;
+        font-weight: 500;
+        margin-bottom: 4rem; }
+      .pro__text--subtext {
+        font-size: 2.2rem;
+        line-height: 1.42;
+        font-weight: 300;
+        margin: 0; }
+      .pro__text--list {
+        font-size: 1.8rem;
+        line-height: 1.88;
+        font-weight: 400;
+        list-style: none;
+        margin-left: 2.5rem;
+        margin-top: 4rem; }
+      .pro__text ul li::before {
+        content: "\2022";
+        color: #ff2d77;
+        display: inline-block;
+        width: 3rem;
+        margin-left: -3rem; }
+      .pro__text--button {
+        height: 5rem;
+        width: 17rem;
+        background: #ff2d77;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 5px;
+        padding-top: 1rem;
+        margin-top: 4rem;
+        cursor: pointer; }
+      .pro__text--button:hover {
+        background: #CC245E; }
+    .pro__photo {
+      flex: 1;
+      position: relative;
+      width: 50%; }
+      .pro__photo .pro__contain--double {
+        height: auto;
+        padding: 0;
+        display: block;
+        margin: 0 auto; }
+  .footer__business-links {
+    width: 70%;
+    border-top: 1px solid #4B4B4B;
+    margin: 0 auto;
+    color: #989898;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    margin-top: 6rem; }
+    .footer__business-links p {
+      margin-top: 0;
+      vertical-align: center;
+      padding-top: 1.1rem; }
+    .footer__business-links ul > li {
+      display: inline-block;
+      margin-right: 3rem; }
+      .footer__business-links ul > li a {
+        text-decoration: none;
+        color: #989898; }
+      .footer__business-links ul > li a:hover {
+        color: #FA2E77; } }
