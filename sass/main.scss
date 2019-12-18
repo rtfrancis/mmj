@@ -56,6 +56,9 @@ img{
                 text-decoration: none;
                 color: $color-white;
             }
+            a:hover{
+                color: $color-pink;
+            }
             .pro-button{
                 margin-top: 2px;
                 margin-left: 1.5rem;
@@ -378,19 +381,15 @@ img{
                     color: $color-white;
                     font-size: 2.2rem;
                 }
+        
                 .pro-button{
-                margin-top: 9px;
-                margin-left: 4rem;
+                    margin-left: 4rem;
                     img{
                         height: 4rem;
                         width: auto;
                         top: 0; 
                         right: 20px;
                     }
-                    .static-button{
-                        display: none  
-                    } 
-                    
                 }
                 
             }
@@ -614,6 +613,64 @@ img{
             }
         }
     }
+}
+
+@media screen and (min-width: 800px){
+    .nav{
+        &__bar{
+            &--links{
+                .loudly-link{
+                    margin-right: 15rem;
+                }
+                .pro-button{
+                margin-top: -4rem;
+                margin-left: 4rem;
+                position: relative;
+                    img{
+                        height: 4rem;
+                        width: auto;
+                        top: 0; 
+                        right: 20px;
+                        // position: absolute;
+                    }
+                    .static-button{
+                        display: block; 
+                        position: absolute;
+                    } 
+                    .active-button{
+                        position: absolute;
+                        opacity: 0;
+                    }
+                    .active-button:hover{
+                        // position: absolute;
+                        opacity: 1;
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+    .footer__social-links--icons--wrapper{
+        width: 30rem;
+        display: flex;
+        justify-content: space-around;
+        .holder{
+            height: 5.5rem;
+            width: 5.5rem;
+            img{
+                position: absolute;
+            }
+            img:last-child{
+                display: block;
+                opacity: 0;
+            }
+            img:last-child:hover{
+                opacity: 1;
+            }
+        }
+    }
+    
 }
 
 @media screen and (min-width: 920px){

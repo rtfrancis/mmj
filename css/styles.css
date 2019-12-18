@@ -37,6 +37,8 @@ img {
       .nav__bar--links a {
         text-decoration: none;
         color: #ffffff; }
+      .nav__bar--links a:hover {
+        color: #ff2d77; }
       .nav__bar--links .pro-button {
         margin-top: 2px;
         margin-left: 1.5rem; }
@@ -271,15 +273,12 @@ img {
           color: #ffffff;
           font-size: 2.2rem; }
         .nav__bar--links .pro-button {
-          margin-top: 9px;
           margin-left: 4rem; }
           .nav__bar--links .pro-button img {
             height: 4rem;
             width: auto;
             top: 0;
             right: 20px; }
-          .nav__bar--links .pro-button .static-button {
-            display: none; }
   .header {
     background: #E6E6E6;
     display: flex;
@@ -448,6 +447,41 @@ img {
           max-width: 60rem;
           padding: 2.5rem 0;
           margin-left: -1.5rem; } }
+
+@media screen and (min-width: 800px) {
+  .nav__bar--links .loudly-link {
+    margin-right: 15rem; }
+  .nav__bar--links .pro-button {
+    margin-top: -4rem;
+    margin-left: 4rem;
+    position: relative; }
+    .nav__bar--links .pro-button img {
+      height: 4rem;
+      width: auto;
+      top: 0;
+      right: 20px; }
+    .nav__bar--links .pro-button .static-button {
+      display: block;
+      position: absolute; }
+    .nav__bar--links .pro-button .active-button {
+      position: absolute;
+      opacity: 0; }
+    .nav__bar--links .pro-button .active-button:hover {
+      opacity: 1; }
+  .footer__social-links--icons--wrapper {
+    width: 30rem;
+    display: flex;
+    justify-content: space-around; }
+    .footer__social-links--icons--wrapper .holder {
+      height: 5.5rem;
+      width: 5.5rem; }
+      .footer__social-links--icons--wrapper .holder img {
+        position: absolute; }
+      .footer__social-links--icons--wrapper .holder img:last-child {
+        display: block;
+        opacity: 0; }
+      .footer__social-links--icons--wrapper .holder img:last-child:hover {
+        opacity: 1; } }
 
 @media screen and (min-width: 920px) {
   .nav {
