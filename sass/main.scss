@@ -634,6 +634,9 @@ img{
             text-align: left;
             min-width: 35rem;
             padding: 9rem .5rem;
+            animation: textFadeIn 1s;
+            animation-delay: .5s;
+            animation-fill-mode: backwards;
             &--container{
                 max-width: 30rem;
                 .header-intro{
@@ -664,6 +667,7 @@ img{
             }
         }
         &__image{
+            animation: phoneIn .8s;
             img{
                 display: block;
                 text-align: center;
@@ -994,3 +998,22 @@ img{
 
     }
 }
+
+
+@keyframes textFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10%); }
+    100% {
+      opacity: 1;
+      transform: translateY(0%); } }
+  
+  @keyframes phoneIn {
+    0% {
+      transform: translateY(15%);
+      opacity: 0; }
+    50% {
+      opacity: .4; }
+    100% {
+      transform: translateY(0);
+      opacity: 1; } }

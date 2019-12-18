@@ -463,7 +463,10 @@ img {
       margin-right: -3rem;
       text-align: left;
       min-width: 35rem;
-      padding: 9rem .5rem; }
+      padding: 9rem .5rem;
+      animation: textFadeIn 1s;
+      animation-delay: .5s;
+      animation-fill-mode: backwards; }
       .header__text--container {
         max-width: 30rem; }
         .header__text--container .header-intro {
@@ -485,12 +488,14 @@ img {
           font-size: 2.2rem;
           font-weight: 500;
           padding-left: -1rem; }
-    .header__image img {
-      display: block;
-      text-align: center;
-      margin: 0 auto;
-      height: auto;
-      max-width: 45rem; }
+    .header__image {
+      animation: phoneIn .8s; }
+      .header__image img {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        height: auto;
+        max-width: 45rem; }
   .features {
     padding: 4rem 3rem; }
     .features .wrapper {
@@ -717,3 +722,21 @@ img {
     .app-holder .app {
       max-width: 1300px;
       margin: 0 auto; } }
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); } }
+
+@keyframes phoneIn {
+  0% {
+    transform: translateY(15%);
+    opacity: 0; }
+  50% {
+    opacity: .4; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
