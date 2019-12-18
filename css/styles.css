@@ -291,24 +291,32 @@ img {
       margin-left: 7rem;
       margin-right: -3rem;
       text-align: left;
-      min-width: 35rem; }
-      .header__text--container .header-intro {
-        font-size: 2.8rem;
-        font-weight: 600; }
-      .header__text--container .header-subtext {
-        font-size: 1.8rem;
-        margin: 3rem 0; }
-      .header__text--container div {
-        display: inline-block;
-        margin: 0 auto;
-        margin-bottom: 2rem; }
-        .header__text--container div img {
-          height: 30px;
-          width: auto;
-          margin: 0 .5rem; }
-      .header__text--container .header-getApp {
-        font-size: 1.5rem;
-        font-weight: 500; }
+      min-width: 35rem;
+      padding: 0; }
+      .header__text--container {
+        padding: 0; }
+        .header__text--container .header-intro {
+          font-size: 2.8rem;
+          font-weight: 600;
+          padding-left: 1rem; }
+        .header__text--container .header-subtext {
+          font-size: 1.8rem;
+          margin: 3rem 0;
+          padding-left: -2rem; }
+        .header__text--container div {
+          display: inline-block;
+          margin: 0 auto;
+          margin-bottom: 2rem;
+          margin-left: -.5rem;
+          padding-left: 1rem; }
+          .header__text--container div img {
+            height: 30px;
+            width: auto;
+            margin: 0 .5rem; }
+        .header__text--container .header-getApp {
+          font-size: 1.5rem;
+          font-weight: 500;
+          padding-left: 1rem; }
     .header__image img {
       display: block;
       text-align: center;
@@ -463,20 +471,20 @@ img {
           font-weight: 700; }
         .header__text--container .header-subtext {
           font-size: 2.4rem;
-          margin: 3rem 0;
-          padding-left: 0; }
+          margin: 3rem 0; }
         .header__text--container div {
           display: inline-block;
           margin: 0 auto;
-          padding-left: 0;
+          padding-left: .5rem;
           margin-bottom: 2rem; }
           .header__text--container div img {
-            height: 30px;
+            height: 40px;
             width: auto;
             margin-right: .5rem; }
         .header__text--container .header-getApp {
           font-size: 2.2rem;
-          font-weight: 500; }
+          font-weight: 500;
+          padding-left: -1rem; }
     .header__image img {
       display: block;
       text-align: center;
@@ -687,3 +695,25 @@ img {
         color: #989898; }
       .footer__business-links ul > li a:hover {
         color: #FA2E77; } }
+
+@media screen and (min-width: 1300px) {
+  .pro-holder {
+    width: 100%;
+    background: #000; }
+    .pro-holder .pro {
+      max-width: 1300px; }
+  .header-holder {
+    width: 100%;
+    background: #E6E6E6; }
+    .header-holder .header {
+      max-width: 1300px;
+      margin: 0 auto; }
+  .features .wrapper {
+    max-width: 1300px;
+    margin: auto; }
+  .app-holder {
+    width: 100%;
+    background: #E6E6E6; }
+    .app-holder .app {
+      max-width: 1300px;
+      margin: 0 auto; } }
